@@ -2,12 +2,19 @@ package main.data;
 
 public abstract class Card {
 
-    String cardHolder;
-    int balance;
-    String cardNumber;
-    PaymentSystem paySystem;
+    public String cardHolder;
+    public int balance;
+    public String cardNumber;
+    public PaymentSystem paySystem;
 
+    public PaymentSystem getPaymentSystem(){
+        return paySystem;
+    };
 
-    abstract void payInCountry(Country country, int amount);
+    public Card(PaymentSystem paySystem) {
+        this.paySystem = paySystem;
+    }
+
+    public abstract void payInCountry(Country country, int amount);
 
 }

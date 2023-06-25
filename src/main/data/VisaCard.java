@@ -2,7 +2,11 @@ package main.data;
 
 public class VisaCard extends Card {
     @Override
-    void payInCountry(Country country, int amount) {
+    public  void payInCountry(Country country, int amount) {
 
+    }
+
+    public VisaCard() {
+        super(PaymentSystem.VISA);
     }
 }

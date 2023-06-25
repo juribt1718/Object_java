@@ -8,7 +8,10 @@ public class ObjectMain {
 
         Card masterCard = new MasterCard();
 
-        masterCard.
+        masterCard.balance = 100;
+        System.out.println(masterCard.getPaymentSystem());
+
+
 
     }
 }

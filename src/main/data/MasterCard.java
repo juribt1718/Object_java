@@ -2,7 +2,11 @@ package main.data;
 
 public class MasterCard extends Card{
     @Override
-    void payInCountry(Country country, int amount) {
+    public void payInCountry(Country country, int amount) {
 
+    }
+
+    public MasterCard() {
+        super(PaymentSystem.MASTERCARD);
     }
 }
